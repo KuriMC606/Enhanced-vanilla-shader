@@ -1,12 +1,12 @@
 # Enhanced-vanilla-shader
 
-## shader information
+##        shader information
 
-### logo
+###             logo
 
 ![day](screenshots/day.png "Enhanced vanilla Shader Day, Minecraft Bedrock 1.20.0")
 
-### shader description
+###        shader description
 
 a lite shader for low devices, with simple effects like:
 > - New Sky
@@ -18,25 +18,25 @@ a lite shader for low devices, with simple effects like:
 > - New Water
 > - New Fog Color
 
-## Screenshots
+##          Screenshots
 
-### Sunset 
+###            Sunset 
 
 ![sunset](screenshots/sunset.png "Enhanced vanilla Shader Sunset, Minecraft Bedrock 1.20.0")
 
-### Day
+###              Day
 
 ![day](screenshots/day.png "Enhanced vanilla Shader Day, Minecraft Bedrock 1.20.0")
 
-### Noon
+###              Noon
 
 ![noon](screenshots/noon.png "Enhanced vanilla Shader Noon, Minecraft Bedrock 1.20.0")
 
-### Night 
+###              Night 
 
 ![night](screenshots/night.png "Enhanced vanilla Shader Night, Minecraft Bedrock 1.20.0")
 
-## Download
+##              Download
 
 [Download]()
 
