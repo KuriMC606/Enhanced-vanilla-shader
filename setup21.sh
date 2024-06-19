@@ -19,7 +19,7 @@ else
   echo "Error: No shaderc binary found for $CPU_ARCH"
   exit 1;
 fi
-https://github.com/devendrn/RenderDragonSourceCodeInv/releases/download/v1/shaderc.$CPU_ARCH"
+SHADERC_URL="https://github.com/devendrn/RenderDragonSourceCodeInv/releases/download/v1/shaderc.$CPU_ARCH"
 
 if [ "$1" == "-f" ]; then
   # clean
