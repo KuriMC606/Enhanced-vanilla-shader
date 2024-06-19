@@ -11,6 +11,18 @@ a lite shader for low devices, with simple effects like:
 
 ## Screenshots
 
+### Sunset 
+
+![sunset](screenshots/sunset.png "Enhanced vanilla Shader Sunset, Minecraft Bedrock 1.20.0")
+
 ### Day
 
-[day](screenshots/day.png)
+![day](screenshots/day.png "Enhanced vanilla Shader Day, Minecraft Bedrock 1.20.0")
+
+### Noon
+
+![noon](screenshots/noon.png "Enhanced vanilla Shader Noon, Minecraft Bedrock 1.20.0")
+
+### Night 
+
+![night](screenshots/night.png "Enhanced vanilla Shader Night, Minecraft Bedrock 1.20.0")
