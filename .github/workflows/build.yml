@@ -1,0 +1,114 @@
+name: build
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  windows:
+    runs-on: windows-2019
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+    - uses: actions/cache@v4
+      with:
+        key: env-files-win
+        path: |
+          ${{ github.workspace }}/env
+          ${{ github.workspace }}/data
+    - run: .\setup.bat
+    - run: ./build.sh -w -p Windows
+      shell: bash
+    - uses: actions/upload-artifact@v4
+      with:
+        name: enhanced-vanilla-shader-windows
+        path: ./build/Windows/temp
+  android:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+    - uses: actions/cache@v4
+      with:
+        key: env-files-linux
+        path: |
+          ${{ github.workspace }}/env
+          ${{ github.workspace }}/data
+    - run: ./setup.sh
+    - run: ./build.sh
+    - uses: actions/upload-artifact@v4
+      with:
+        name: enhanced-vanilla-shader-android
+        path: ./build/Android/temp
+  ios:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - uses: actions/cache@v4
+      with:
+        key: env-files-linux
+        path: |
+          ${{ github.workspace }}/env
+          ${{ github.workspace }}/data
+    - run: ./setup.sh
+    - run: ./build.sh -p iOS
+    - uses: actions/upload-artifact@v4
+      with:
+        name: enhanced-vanilla-shader-ios-materials
+        path: ./build/iOS     
+  windows-1.21:
+    runs-on: windows-2019
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+    - uses: actions/cache@v4
+      with:
+        key: env-files-win
+        path: |
+          ${{ github.workspace }}/env
+          ${{ github.workspace }}/data
+    - run: .\setup21.bat
+    - run: ./build21.sh -w -p Windows
+      shell: bash
+    - uses: actions/upload-artifact@v4
+      with:
+        name: enhanced-vanilla-shader-windows
+        path: ./build/Windows/temp
+  android-1.21:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+    - uses: actions/cache@v4
+      with:
+        key: env-files-linux
+        path: |
+          ${{ github.workspace }}/env
+          ${{ github.workspace }}/data
+    - run: ./setup21.sh
+    - run: ./build21.sh
+    - uses: actions/upload-artifact@v4
+      with:
+        name: enhanced-vanilla-shader-android
+        path: ./build/Android/temp
+  ios-1.21:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - uses: actions/cache@v4
+      with:
+        key: env-files-linux
+        path: |
+          ${{ github.workspace }}/env
+          ${{ github.workspace }}/data
+    - run: ./setup21.sh
+    - run: ./build21.sh -p iOS
+    - uses: actions/upload-artifact@v4
+      with:
+        name: enhanced-vanilla-shader-ios-materials
+        path: ./build/iOS
