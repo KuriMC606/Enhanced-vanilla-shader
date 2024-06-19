@@ -1,0 +1,25 @@
+{
+    "format_version": 2,
+    "header": {
+        "description": "a enhanced vanilla shader, use with Patchapp or Better Render Dragon",
+        "name": "Enhanced Vanilla Shader",
+        "uuid": "66c6e9a8-3093-462a-9c36-dbb052165897",
+        "version": [0,1,0],
+        "min_engine_version": [ 1, 20, 0 ]
+    },
+    "modules": [
+        {
+            "description": "a enhanced vanilla shader, use with Patchapp or Better Render Dragon",
+            "type": "resources",
+            "uuid": "743f6949-53be-44b6-b326-398005028816",
+            "version": [0,1,0]
+        }
+    ],
+"metadata": {
+        "authors": ["KuriMC"],
+        "url": "https://github.com/RukiMC123/Enhanced-vanilla-shader"
+        "youtube": "https://www.youtube.com/@Kuri_MC606"
+        "tiktok": "https://www.tiktok.com/@kurimc_?_t=8nJyTaG2F8q&_r=1"
+        "Facebook": "https://www.facebook.com/profile.php?id=61557180046310&mibextid=ZbWKwL"
+    }
+}
