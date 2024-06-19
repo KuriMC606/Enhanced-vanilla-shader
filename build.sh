@@ -1,6 +1,6 @@
 #!/bin/bash
 
-MBT_JAR_FILES=(env/jar/MaterialBinTool-0.8.2.jar)
+MBT_JAR_FILES=(env/jar/MaterialBinTool-0.8.2-all.jar)
 MBT_JAR="java -jar ${MBT_JAR_FILES[0]}"
 
 SHADERC=env/bin/shaderc
