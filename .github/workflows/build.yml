@@ -19,7 +19,7 @@ jobs:
           ${{ github.workspace }}/env
           ${{ github.workspace }}/data
     - run: .\setup.bat
-    - run: ./build.sh -w -p Windows
+    - run: ./build.sh -p Windows
       shell: bash
     - uses: actions/upload-artifact@v4
       with:
@@ -72,7 +72,7 @@ jobs:
           ${{ github.workspace }}/env
           ${{ github.workspace }}/data
     - run: .\setup21.bat
-    - run: ./build21.sh -w -p Windows
+    - run: ./build21.sh -p Windows
       shell: bash
     - uses: actions/upload-artifact@v4
       with:
