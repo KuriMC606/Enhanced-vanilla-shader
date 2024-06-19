@@ -18,6 +18,8 @@ jobs:
         path: |
           ${{ github.workspace }}/env
           ${{ github.workspace }}/data
+    - run: chmod +x ./setup.bat
+    - run: chmod +x ./build.sh
     - run: .\setup.bat
     - run: ./build.sh -p Windows
       shell: bash
@@ -37,6 +39,8 @@ jobs:
         path: |
           ${{ github.workspace }}/env
           ${{ github.workspace }}/data
+    - run: chmod +x ./setup.sh
+    - run: chmod +x ./build.sh
     - run: ./setup.sh
     - run: ./build.sh
     - uses: actions/upload-artifact@v4
@@ -53,6 +57,8 @@ jobs:
         path: |
           ${{ github.workspace }}/env
           ${{ github.workspace }}/data
+    - run: chmod +x ./setup.sh
+    - run: chmod +x ./build.sh
     - run: ./setup.sh
     - run: ./build.sh -p iOS
     - uses: actions/upload-artifact@v4
@@ -71,6 +77,8 @@ jobs:
         path: |
           ${{ github.workspace }}/env
           ${{ github.workspace }}/data
+    - run: chmod +x ./setup21.bat
+    - run: chmod +x ./build21.sh
     - run: .\setup21.bat
     - run: ./build21.sh -p Windows
       shell: bash
@@ -90,6 +98,8 @@ jobs:
         path: |
           ${{ github.workspace }}/env
           ${{ github.workspace }}/data
+    - run: chmod +x ./setup21.sh
+    - run: chmod +x ./build21.sh
     - run: ./setup21.sh
     - run: ./build21.sh
     - uses: actions/upload-artifact@v4
@@ -106,6 +116,8 @@ jobs:
         path: |
           ${{ github.workspace }}/env
           ${{ github.workspace }}/data
+    - run: chmod +x ./setup21.sh
+    - run: chmod +x ./build21.sh
     - run: ./setup21.sh
     - run: ./build21.sh -p iOS
     - uses: actions/upload-artifact@v4
