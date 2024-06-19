@@ -4,7 +4,7 @@
 
 ###             logo
 
-![day](screenshots/day.png "Enhanced vanilla Shader Day, Minecraft Bedrock 1.20.0")
+![day](pack/pack_icon.png "Enhanced vanilla Shader Logo, Minecraft Bedrock 1.20.0")
 
 ###        shader description
 
