@@ -59,7 +59,7 @@ jobs:
       with:
         name: enhanced-vanilla-shader-ios-materials
         path: ./build/iOS     
-  windows-1.21:
+  windows_ne:
     runs-on: windows-2019
     steps:
     - uses: actions/checkout@v4
@@ -78,7 +78,7 @@ jobs:
       with:
         name: enhanced-vanilla-shader-windows
         path: ./build/Windows/temp
-  android-1.21:
+  android_ne:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
@@ -96,7 +96,7 @@ jobs:
       with:
         name: enhanced-vanilla-shader-android
         path: ./build/Android/temp
-  ios-1.21:
+  ios_ne:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
