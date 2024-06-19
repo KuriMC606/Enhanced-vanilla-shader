@@ -1,4 +1,13 @@
 # Enhanced-vanilla-shader
+
+## shader information
+
+### logo
+
+![day](screenshots/day.png "Enhanced vanilla Shader Day, Minecraft Bedrock 1.20.0")
+
+### shader description
+
 a lite shader for low devices, with simple effects like:
 > - New Sky
 > - More Saturation
