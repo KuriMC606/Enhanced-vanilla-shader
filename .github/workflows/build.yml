@@ -21,6 +21,7 @@ jobs:
           ${{ github.workspace }}/data
     - run: chmod +x ./setup.bat
     - run: chmod +x ./build.sh
+    - run: chmod +x env/bin/shaderc
     - run: .\setup.bat
     - run: ./build.sh -p Windows
       shell: bash
@@ -42,6 +43,7 @@ jobs:
           ${{ github.workspace }}/data
     - run: chmod +x ./setup.sh
     - run: chmod +x ./build.sh
+    - run: chmod +x env/bin/shaderc
     - run: ./setup.sh
     - run: ./build.sh
     - uses: actions/upload-artifact@v4
@@ -60,6 +62,7 @@ jobs:
           ${{ github.workspace }}/data
     - run: chmod +x ./setup.sh
     - run: chmod +x ./build.sh
+    - run: chmod +x env/bin/shaderc
     - run: ./setup.sh
     - run: ./build.sh -p iOS
     - uses: actions/upload-artifact@v4
