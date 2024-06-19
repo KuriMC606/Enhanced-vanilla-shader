@@ -26,7 +26,7 @@ jobs:
     - uses: actions/upload-artifact@v4
       with:
         name: enhanced-vanilla-shader-windows
-        path: ./build/Windows/temp
+        path: ./build/Windows
   android:
     runs-on: ubuntu-latest
     steps:
@@ -46,7 +46,7 @@ jobs:
     - uses: actions/upload-artifact@v4
       with:
         name: enhanced-vanilla-shader-android
-        path: ./build/Android/temp
+        path: ./build/Android
   ios:
     runs-on: ubuntu-latest
     steps:
@@ -85,7 +85,7 @@ jobs:
     - uses: actions/upload-artifact@v4
       with:
         name: enhanced-vanilla-shader-windows
-        path: ./build/Windows/temp
+        path: ./build/Windows_NE
   android_ne:
     runs-on: ubuntu-latest
     steps:
@@ -105,7 +105,7 @@ jobs:
     - uses: actions/upload-artifact@v4
       with:
         name: enhanced-vanilla-shader-android
-        path: ./build/Android/temp
+        path: ./build/Android_NE
   ios_ne:
     runs-on: ubuntu-latest
     steps:
@@ -123,4 +123,4 @@ jobs:
     - uses: actions/upload-artifact@v4
       with:
         name: enhanced-vanilla-shader-ios-materials
-        path: ./build/iOS
+        path: ./build/iOS_NE
